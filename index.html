@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gautam Dev — Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+          <span class="logo">GD</span>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      
+        <div class="hero">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Gautam <span>Dev</span></h1>
+          <p class="role">Computer Science Engineer</p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Download Resume</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+      </header>
+
+  <main>
+    <!-- sections go here -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+      
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="assets/profile.jpg" alt="Gautam Dev">
+          </div>
+      
+          <div class="about-content">
+            <p>
+                A Computer Science undergraduate skilled in Python and C, with practical experience building and
+                 deploying real-world projects. Known for strong analytical thinking, efficient problem-solving, and effective teamwork. 
+                 Passionate about leveraging technology to create impactful solutions in a fast-paced, innovation-focused environment.
+            </p>
+      
+            <div class="stats-row">
+              <div class="stat">
+                <span class="stat-number">7.73</span>
+                <span class="stat-label">CGPA</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Projects shipped</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                <div class="skill"><i class="devicon-c-plain colored"></i><span>C</span></div>
+                <div class="skill"><i class="devicon-react-original colored"></i><span>React</span></div>
+                <div class="skill"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+                <div class="skill"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                <div class="skill"><i class="ti ti-robot"></i><span>Agentic AI</span></div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+      
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-icon proj-teal"><i class="ti ti-robot"></i></div>
+            <h3>AI Job Application Assistant</h3>
+            <p>Multi-agent system using CrewAI and Groq that researches roles, tailors resumes, and drafts cover letters from an uploaded resume.</p>
+            <div class="tag-row">
+              <span class="tag">FastAPI</span>
+              <span class="tag">React</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">CrewAI</span>
+            </div>
+            <a href="https://github.com/gautam-1910/ai-job-assistant" target="_blank" class="project-link">
+              <i class="ti ti-brand-github"></i> View code
+            </a>
+          </div>
+      
+          <div class="project-card">
+            <div class="project-icon proj-purple"><i class="ti ti-chart-bar"></i></div>
+            <h3>LearnLoop</h3>
+            <p>Habit-retention tracker using an exponential decay score inspired by the Ebbinghaus forgetting curve — pure formula, no LLM.</p>
+            <div class="tag-row">
+              <span class="tag">FastAPI</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Recharts</span>
+            </div>
+            <a href="https://github.com/gautam-1910/learnloop" target="_blank" class="project-link">
+              <i class="ti ti-brand-github"></i> View code
+            </a>
+          </div>
+      
+          <div class="project-card">
+            <div class="project-icon proj-coral"><i class="ti ti-camera"></i></div>
+            <h3>SPARC</h3>
+            <p>YOLOv11 PPE-compliance detection for electrical substations — ~97.56% mAP, deployed on a Raspberry Pi 4.</p>
+            <div class="tag-row">
+              <span class="tag">YOLOv11</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Raspberry Pi</span>
+            </div>
+            <a href="https://github.com/gautam-1910/SPARC-dashboard" target="_blank" class="project-link">
+                <i class="ti ti-brand-github"></i> View code
+              </a>
+            </div>   <!-- closes SPARC's .project-card -->
+            <div class="project-card">
+              <div class="project-icon proj-green"><i class="ti ti-shopping-cart"></i></div>
+              <h3>Grocery List Expiry Tracker</h3>
+              <p>Web app that tracks grocery items and expiry dates, with an OCR scanner to log items from packaging and a Gemini-powered chatbot for recipe suggestions and food-waste tips.</p>
+              <div class="tag-row">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">React</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Google Vision OCR</span>
+                <span class="tag">Gemini API</span>
+              </div>
+              <a href="https://github.com/gautam-1910/Keep-It-Fresh" target="_blank" class="project-link">
+                <i class="ti ti-brand-github"></i> View code
+              </a>
+            </div>   <!-- closes Grocery's .project-card -->
+          </div>     <!-- closes .project-grid — NOW it's after all 4 cards -->
+        </section>
+      </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
