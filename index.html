@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gautam Dev — Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/dist/tabler-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,7 +27,7 @@
           <h1>Gautam <span>Dev</span></h1>
           <p class="role">Computer Science Engineer</p>
           <div class="hero-buttons">
-            <a href="#" class="btn btn-primary">Download Resume</a>
+            <a href="assets/resume.pdf" class="btn btn-primary" download="Gautam_Dev_Resume.pdf">Download Resume</a>
             <a href="#contact" class="btn btn-outline">Contact Me</a>
           </div>
         </div>
@@ -137,6 +139,24 @@
             </div>   <!-- closes Grocery's .project-card -->
           </div>     <!-- closes .project-grid — NOW it's after all 4 cards -->
         </section>
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Let's talk</h2>
+            <p class="contact-sub">Have a role, project, or idea in mind? Reach out directly.</p>
+          
+            <div class="contact-icons">
+                <a href="mailto:gautamdev1910@gmail.com" class="contact-icon-link" aria-label="Email">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="m22 7-10 6L2 7"/>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com/in/gautam-dev1910" target="_blank" rel="noopener" class="contact-icon-link" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                    <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+                  </svg>
+                </a>
+              </div>
+          </section>
       </main>
 
   <script src="script.js"></script>
