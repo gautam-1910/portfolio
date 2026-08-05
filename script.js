@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-const roles = ["Full Stack Developer", "GenAI Engineer", "Problem Solver"];
+const roles = ["Full Stack Developer", "Software Engineer"];
 const typedEl = document.getElementById("typedRole");
 let roleIndex = 0, charIndex = 0, deleting = false;
 
@@ -44,3 +44,4 @@ function typeLoop() {
   setTimeout(typeLoop, deleting ? 40 : 70);
 }
 typeLoop();
+document.getElementById("year").textContent = new Date().getFullYear();
