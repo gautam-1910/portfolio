@@ -45,3 +45,13 @@ function typeLoop() {
 }
 typeLoop();
 document.getElementById("year").textContent = new Date().getFullYear();
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // animate once only
+      }
+    });
+  }, { threshold: 0.15 });
+  
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
